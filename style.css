@@ -1,0 +1,42 @@
+body{
+    background-color: lightslategray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.form{
+    width: 400px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.card{
+    box-shadow: 1px 1px 5px black;
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.tit{
+    
+    color: blue;
+    text-align: center;
+}
+
+.dados{
+    text-align: center;
+    width: 100%;
+}
+
+input{
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 5px;
+    height: 20px;
+}
+
+button{
+    width: 70%;
+    border-radius: 15px;
+    background-color: blue;
+    color: white;
+    height: 30px;
+    border: 0px;
+}

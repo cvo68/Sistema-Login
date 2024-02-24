@@ -1,18 +1,21 @@
 <?php 
+
+    session_start();
+    
     $localhost = "localhost";
     $user = "root";
     $password = "";
     $dbname = "loginsis";
 
-    $pdo = new PDO("mysql: dbname=".$dbname."; host=".$localhost, $user, $password);
+    global $pdo;
 
-    $pdo-> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    try{
+        $pdo = new PDO("mysql: dbname=".$dbname."; host=".$localhost, $user, $password);
 
-    $sql = $pdo -> query("SELECT * FROM sistema");
-
-    $sql -> execute();
-
-    print $sql -> rowCount();
-
-
+        $pdo-> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    }
+    catch(PDOException $e){
+        print "ERRO ". $e-> getMessage();
+        exit;
+    }
 ?>

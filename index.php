@@ -7,7 +7,7 @@
     <title>Sistema de Login</title>
 </head>
 <body>
-    <form class="form" action="" method="post">
+    <form class="form" action="logar.php" method="post">
         <div class="card">
             <div class="tit">
                 <h1>Painel de Controle</h1>
